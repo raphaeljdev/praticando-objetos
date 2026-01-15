@@ -11,9 +11,9 @@ const dispositivos = [
   { nome: 'Projetor', status: 'ativo' },
 ];
 
-for (let i = 0; i < dispositivos.length; i++) {
-  nomeDoDispositivo = dispositivos[i].nome;
-  statusDoDispositivo = dispositivos[i].status;
+for (let dispositivo of dispositivos) {
+  nomeDoDispositivo = dispositivo.nome;
+  statusDoDispositivo = dispositivo.status;
   console.log(
     'Dispositivo:',
     nomeDoDispositivo,
